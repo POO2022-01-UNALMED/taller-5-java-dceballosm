@@ -4,11 +4,17 @@ import gestion.*;
 import java.util.ArrayList;
 
 public class Reptil extends Animal {
-   private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
+   private static ArrayList<Reptil> listado;
    public static int iguanas = 0;
    public static int serpientes = 0;
    private String colorEscamas;
    private int largoCola;
+   
+   static {
+       Reptil.listado = new ArrayList<Reptil>();
+       Reptil.iguanas = 0;
+       Reptil.serpientes = 0;
+   }
 
    public Reptil(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int largoCola) {
       super.nombre = nombre;
