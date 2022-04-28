@@ -11,7 +11,7 @@ public class Animal
     protected String genero;
     protected Zona zona;
     
-    public Animal(final String nombre, final int edad, final String habitat, final String genero, final Zona zona) {
+    public Animal(String nombre, int edad, String habitat,String genero,Zona zona) {
         this.nombre = nombre;
         this.edad = edad;
         this.habitat = habitat;
@@ -29,7 +29,7 @@ public class Animal
     }
     
     public String totalPorTipo() {
-        final String formato = "Mamiferos:" + Mamifero.cantidadMamiferos() + "\nAves:" + Ave.cantidadAves() + "\nReptiles:" + Reptil.cantidadReptiles() + "\nPeces:" + Pez.cantidadPeces() + "\nAnfibios:" + Anfibio.cantidadAnfibios();
+        String formato = "Mamiferos:" + Mamifero.cantidadMamiferos() + "\nAves:" + Ave.cantidadAves() + "\nReptiles:" + Reptil.cantidadReptiles() + "\nPeces:" + Pez.cantidadPeces() + "\nAnfibios:" + Anfibio.cantidadAnfibios();
         return formato;
     }
     
